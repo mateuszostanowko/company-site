@@ -1,0 +1,112 @@
+.bg-blue{
+    background-color: #1395ff;
+}
+
+.text-color-gray{
+    color: #e2e2e2;
+}
+
+.height-100vh{
+    height: 100vh;
+}
+
+.height-100pro{
+    height: 100%;
+}
+/* Navbar */
+.navbar{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 100;
+}
+
+.navbar-button{
+    width: 30px;
+    height: 30px;
+}
+.navbar-item{
+    color: #ffffff;
+}
+
+.navbar-item-nav{
+    border-bottom: 2px solid #ffffff;
+    font-size: 1.1rem;
+}
+
+.navbar-item-nav:hover{
+    color: #bbbbbb;
+}    
+@media(max-width:767px){
+    .navbar-item-nav:last-child{
+        border-bottom: none;
+    }
+}
+
+@media(min-width: 768px){
+    .navbar-item-nav{
+        border-bottom: 2px solid #1395ff;
+    }
+    .navbar-item-nav:hover{
+        border-bottom: 2px solid #ffffff;
+        color: #ffffff;
+    }
+    .navbar-item{
+        visibility: visible;
+    }
+}
+
+/* Top */
+
+.jumbotron-top{
+    height: 100%;
+    background-image: url('img/strona-obraz-przykład.jpg');
+    background-position: 25% 25%;
+    background-repeat: no-repeat;
+    padding:0;
+}
+
+.top-container{
+    background-color: #00000091;
+}
+
+.top-content-main{
+    margin-top: 5rem;
+}
+
+@media(min-width: 768px){
+    .top-content-main{
+        margin-top: 10rem;
+    }
+}
+
+/* O nas */
+
+#about-us{
+
+}
+
+.about-us-col{
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+}
+
+.about-us-img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+/* Technologie */
+
+.technology-item{
+    border: 2px solid #1395ff;
+    background-color: #ffffff;
+}
+
+.technology-img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
