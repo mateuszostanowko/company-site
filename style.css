@@ -22,6 +22,9 @@
     z-index: 100;
 }
 
+.nav-img{
+    height: 40px;
+}
 .navbar-button{
     width: 30px;
     height: 30px;
@@ -54,6 +57,10 @@
     }
     .navbar-item{
         visibility: visible;
+    }
+
+    .nav-img{
+        height: 50px;
     }
 }
 
@@ -100,9 +107,13 @@
 
 /* Technologie */
 
+.technology{
+    margin-bottom: 100px;
+}
 .technology-item{
-    border: 2px solid #1395ff;
+    border: 1px solid #1395ff;
     background-color: #ffffff;
+    margin: 5px;
 }
 
 .technology-img{
@@ -110,3 +121,24 @@
     display: block;
     margin: auto;
 }
+
+/* Kontakt */
+
+.contact{
+    background-image: url('img/contact-bg-img.jpg'); /*Photo by rawpixel on Unsplash*/
+    height: 100vh;
+    background-position: 50% 50%;
+}
+
+.contact-bg-img{
+   position: absolute;
+   overflow: auto;
+   z-index: -1;
+}
+
+.contact-bg-overlay{
+    background-color: #1395ffbd;
+}
+
+
+/* Copyright */
