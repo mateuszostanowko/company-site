@@ -35,26 +35,19 @@
 
 .navbar-item-nav{
     border-bottom: 2px solid #ffffff;
-    font-size: 1.1rem;
 }
 
 .navbar-item-nav:hover{
     color: #bbbbbb;
-}    
-@media(max-width:767px){
-    .navbar-item-nav:last-child{
-        border-bottom: none;
-    }
 }
 
+.navbar-item-nav:last-child{
+    border-bottom: 2px solid #1395ff;
+}
+
+
+
 @media(min-width: 768px){
-    .navbar-item-nav{
-        border-bottom: 2px solid #1395ff;
-    }
-    .navbar-item-nav:hover{
-        border-bottom: 2px solid #ffffff;
-        color: #ffffff;
-    }
     .navbar-item{
         visibility: visible;
     }
@@ -62,6 +55,27 @@
     .nav-img{
         height: 50px;
     }
+
+    .navbar-item-nav:last-child{
+        border-bottom: 2px solid #1395ff;
+    }
+
+    .navbar-item-nav{
+        transition: 0.3s ease;
+        background: #1395ff;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+        border-bottom: 2px solid #1395ff;
+        padding: 10px 0;
+        margin: 0 10px;
+      }
+      
+      .navbar-item-nav:hover{
+          color: #ffffff;
+          border-bottom: 2px solid #ffffff;
+          padding: 6px 0; 
+      }   
 }
 
 /* Top */
