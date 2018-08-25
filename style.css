@@ -140,7 +140,7 @@
 
 .contact{
     background-image: url('img/contact-bg-img.jpg'); /*Photo by rawpixel on Unsplash*/
-    height: 100vh;
+    height: 100%;
     background-position: 50% 50%;
 }
 
