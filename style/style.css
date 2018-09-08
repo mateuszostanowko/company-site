@@ -76,14 +76,13 @@
         .nav-underline{
             width: 0;
             height: 2px;
-            background-color: #ec1414; 
-            margin:auto;
-            padding:0;
+            background-color: #ffffff; 
+            margin: auto;
+            border-radius: 10px; 
         }
 
         .nav-underline-hover{
-            width: 0;
-            border-radius: 10px; 
+            width: 100%;
             transition: width 0.5s;
         }
 
