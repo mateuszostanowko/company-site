@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 
 
 
@@ -26,17 +26,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarList">
           <div class="navbar-nav align-items-center mx-auto mr-md-0">
-            <a href="#" class="nav-link nav-item px-4 navbar-item navbar-item-nav lead">
+            <a href="#" id="nav-start" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-1 lead">
               <div class="text-center mx-auto">Start</div>
+              <div class="nav-underline nav-underline-1 mt-1"></div>
             </a>
-            <a href="#about-sites" class="nav-link nav-item px-4 navbar-item navbar-item-nav lead">
+            <a href="#about-sites" id="nav-about-sites" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-2 lead">
               <div class="text-center mx-auto">O projektach</div>
+              <div class="nav-underline nav-underline-2 mt-1"></div>
             </a>
-            <a href="#contact" class="nav-link nav-item px-4 navbar-item navbar-item-nav lead">
+            <a href="#" id="nav-contact" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-3 lead">
               <div class="text-center mx-auto">Kontakt</div>
+              <div class="nav-underline nav-underline-3 mt-1"></div>
             </a>
-            <a href="#technology" class="nav-link nav-item px-4 navbar-item navbar-item-nav lead">
+            <a href="#technology" id="nav-technology" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-4 lead">
               <div class="text-center mx-auto">Technologie</div>
+              <div class="nav-underline nav-underline-4 mt-1"></div>
             </a>
           </div>    
         </div>
@@ -128,30 +132,30 @@
           <div class="row py-5">
             <div class="col-12 col-md-6">
               <h3 class="py-2">Formularz kontaktowy</h3>
-              <form action="kontakt.php">
+              <form action="php/contact.php" method="post">
                 <div class="form-group">
                   <label for="name" class="lead">Imię</label>
-                  <input class="form-control"type="text" id="name" placeholder="Twoje imię">
+                  <input class="form-control"type="text" name="name" id="name" placeholder="Twoje imię">
                 </div>
                 <div class="form-group">
                   <label for="surname" class="lead">Nazwisko</label>
-                  <input class="form-control"type="text" id="surname" placeholder="Twoje nazwisko">
+                  <input class="form-control"type="text" name="surname" id="surname" placeholder="Twoje nazwisko">
                 </div>
                 <div class="form-group">
                   <label for="business" class="lead">Nazwa Firmy(opcjonalnie)</label>
-                  <input class="form-control"type="text" id="business" placeholder="Nazwa twojej firmy">
+                  <input class="form-control"type="text" name="business" id="business" placeholder="Nazwa twojej firmy">
                 </div>
                 <div class="form-group">
                   <label for="email" class="lead">Adres E-mail 
                     <i class="fas fa-info-circle mr-0" data-toggle="tooltip" data-placement="right" title='Adres e-mail jest mi potrzebny żeby odpowiedzieć na wiadomość i nie udostępnię go podmiotom trzecim'></i>
                   </label>
-                  <input class="form-control"type="email" id="email" placeholder="Twój adres e-mail">
+                  <input class="form-control"type="email" name="email" id="email" placeholder="Twój adres e-mail">
                 </div>
                 <div class="form-group">
                   <label for="message" class="lead">Wiadomość</label>
-                  <textarea rows="5" class="form-control" type="text" placeholder="Treść wiadomości"></textarea>
+                  <textarea rows="5" class="form-control" type="text" name="message" id="message" placeholder="Treść wiadomości"></textarea>
                 </div>
-                <button type="submit" class="btn btn-warning">Wyślij</button>
+                <button type="submit" name="submit" id="submit" class="btn btn-warning">Wyślij</button>
               </form>
             </div>
 
@@ -177,6 +181,7 @@
         </div>
       </div>
     </section>
+    
     
 
     <!-- Copyright -->
