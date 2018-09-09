@@ -45,4 +45,12 @@ $('.navbar-item-4').hover(
     }
 );
 
-//Scroll Top
+//Change Nav Style
+
+$(document).scroll(function(){
+    var scrollValue= $(document).scrollTop();
+
+    if(scrollValue>800) $('.navbar').addClass('navbar-scroll');
+    else $('.navbar').removeClass('navbar-scroll');
+});
+    
