@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="PL-pl">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style/fontello.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -20,13 +22,13 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md ">
       <div class="container">
-        <a href="#" class="navbar-brand navbar-item"><img src="img/logo.png" alt="MateuszOstanówko.pl" class="img img-fluid nav-img"></a>
+        <a href="#top" class="navbar-brand navbar-item"><img src="img/logo.png" alt="MateuszOstanówko.pl" class="img img-fluid nav-img"></a>
         <button class="navbar-toggler navbar-item" type="button" data-toggle="collapse" data-target="#navbarList">
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarList">
           <div class="navbar-nav align-items-center mx-auto mr-md-0">
-            <a href="#" id="nav-start" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-1 lead">
+            <a href="#top" id="nav-start" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-1 lead">
               <div class="text-center mx-auto">Start</div>
               <div class="nav-underline nav-underline-1 mt-1"></div>
             </a>
@@ -34,12 +36,13 @@
               <div class="text-center mx-auto">O projektach</div>
               <div class="nav-underline nav-underline-2 mt-1"></div>
             </a>
-            <a href="#" id="nav-contact" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-3 lead">
-              <div class="text-center mx-auto">Kontakt</div>
+            
+            <a href="#technology" id="nav-technology" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-3 lead">
+              <div class="text-center mx-auto">Technologie</div>
               <div class="nav-underline nav-underline-3 mt-1"></div>
             </a>
-            <a href="#technology" id="nav-technology" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-4 lead">
-              <div class="text-center mx-auto">Technologie</div>
+            <a href="#contact" id="nav-contact" class="nav-link nav-item px-4 navbar-item navbar-item-nav navbar-item-4 lead nav-contact">
+              <div class="text-center mx-auto">Kontakt</div>
               <div class="nav-underline nav-underline-4 mt-1"></div>
             </a>
           </div>    
@@ -48,13 +51,16 @@
     </nav>
 
     <!-- Top -->
-    <div class="jumbotron jumbotron-fluid jumbotron-top">
-      <div class="container-fluid h-100 top-container">
+    <div id="top" class="jumbotron jumbotron-fluid jumbotron-top">
+      <div class="container-fluid  top-container">
           <div class="row container mx-auto text-center text-white height-100vh">
               <p class="col-12 display-4 align-self-center top-content-main">Nowoczesna witryna internetowa wizytówką twojej firmy</p>
               <p class="col-12 lead align-self-start">Stworzę ją dla ciebie</p>
               <a class="col-12 align-self-end lead text-white pb-4 top-arrows" href="#about-sites"><h1><i class="fas fa-angle-double-down"></i></h1></a>
           </div>   
+      </div>
+      <div class="scroll-top d-none">
+        <a href="#top" class="icon-up-open scroll-top-icon"></a>
       </div>
     </div>
 
@@ -72,11 +78,11 @@
             <div class="col-12 col-md-3 m-1 about-us-col">
                 <img src="img/devices-img.png" alt="devices" class="img img-fluid d-block mx-auto about-us-img">
               <span class="lead">Responsywność</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vel doloremque libero exercitationem, harum optio autem enim, quibusdam consectetur odit tenetur pariatur, ut suscipit quia beatae necessitatibus et! Pariatur atque nihil et, perspiciatis, aut repellat aspernatur adipisci repudiandae perferendis aperiam natus iste? Nisi dolore natus saepe dicta cumque, ipsa odit.</p>
+              <p>Jedna z najważniejszych jeśli nie najważniejsza cecha nowoczesnej witryny internetowej. W czasach kiedy prawie każda osoba posiada telefon z dostępem do internetu bardzo ważne jest aby na każdym urządzeniu strona była równie czytelna i przejrzysta. To właśnie daje responsywność, dzięki niej strona automatycznie dopasowuje się do urządzenia na ktróym zostaje otwarta.</p>
             </div>
             <div class="col-12 col-md-3 m-1 about-us-col">
                 <img src="img/clock-img.png" alt="clock" class="img img-fluid d-block mx-auto about-us-img">
-              <span class="lead">Szybkość wczytywania</span>
+              <span class="lead">Czas realizacji</span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ratione debitis veniam ut, veritatis quaerat nulla pariatur labore repellendus animi nemo, dolore exercitationem incidunt aliquam perferendis alias quo? Ullam recusandae, alias temporibus voluptate beatae vel accusantium, impedit est ipsam fugiat ipsum. Quidem distinctio libero itaque natus ea beatae ipsum ad.</p>
             </div>
             <div class="col-12 col-md-3 m-1 about-us-col">
@@ -191,10 +197,9 @@
         </div>
         
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
     <script src="scripts/script.js"></script>
   </body>
 </html>
