@@ -48,8 +48,8 @@ $('.navbar-item-4').hover(
 //Change Nav Style
 
 $(document).scroll(function(){
-    var scrollValue= $(document).scrollTop();
-    var scrollSection =$('#about-sites').scrollTop()+700;
+    var scrollValue = $(document).scrollTop();
+    var scrollSection = 700;                    // Do poprawy
 
     if(scrollValue>scrollSection) {
         $('.navbar').addClass('navbar-scroll');
@@ -59,6 +59,25 @@ $(document).scroll(function(){
         $('.navbar').removeClass('navbar-scroll');
         $('.scroll-top').removeClass('d-block');
     }
+});
+
+//Active Nav Item -------------------   Nie działa :(
+
+$(document).scroll(function(){
+    var scrollValue = $(document).scrollTop();
+    var section1 = $('#about-sites').offset.top;
+    var section2 = $('#techology').scrollTop();
+    var section3 = $('#contact').scrollTop();
+    console.log('sectionOne: '+ section1);
+
+    if(scrollValue>section1 && scrollValue<section2)   $('#nav-underline-2').addClass('nav-underline-active');
+    else    $('.nav-underline-2').removeClass('nav-underline-active');
+
+    if(scrollValue>section2 && scrollValue<section3)   $('#nav-underline-3').addClass('nav-underline-active');
+    else    $('.nav-underline-3').removeClass('nav-underline-active');
+
+    if(scrollValue>section3)   $('#nav-underline-4').addClass('nav-underline-active');
+    else    $('.nav-underline-4').removeClass('nav-underline-active');
 });
 
 //Smooth Scrolling

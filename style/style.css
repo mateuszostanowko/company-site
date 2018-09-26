@@ -105,6 +105,10 @@
             transition: width 0.5s;
         }
 
+        .nav-underline-active{
+            width: 2px;
+        }
+
         .nav-underline-hover{
             width: 100%;
             transition: width 0.5s;
