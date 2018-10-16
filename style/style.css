@@ -160,6 +160,22 @@
 
 }
 
+@keyframes arrowsAnimation{
+    0%{
+        top:0;
+    }
+    50%{
+        top: 15px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.top-arrows{
+    position: relative;
+    animation: arrowsAnimation 1s infinite;
+}
+
 
 @media(min-width: 768px){
     .top-content-main{
@@ -195,6 +211,20 @@
     margin-top: 20px;
 }
 
+@keyframes aboutAnimation{
+    0%{
+        left: -1000px;
+    }
+
+    100%{
+        left: 0;
+    }
+}
+.about-projects-title{
+    position: relative;
+    animation: aboutAnimation 1.5s;
+}
+
 /* Technologie */
 
 .technology{
@@ -204,6 +234,12 @@
     border: 1px solid #1395ff;
     background-color: #ffffff;
     margin: 5px;
+    transition: 1s;
+}
+
+.technology-item:hover{
+    transition: 1s;
+    transform: perspective(300px) rotateY(40deg);
 }
 
 .technology-img{
