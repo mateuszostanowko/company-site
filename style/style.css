@@ -37,7 +37,13 @@
 
 .nav-img{
     height: 40px;
+    width: 130px;
+    background-image: url('../img/logo2.png');
+    background-size: 100%;
+    border-radius: none;
 }
+
+
 .navbar-button{
     width: 30px;
     height: 30px;
@@ -67,6 +73,12 @@
 
     .nav-img{
         height: 50px;
+        width: 150px;
+        background-image: url('../img/logo1.png');
+    }
+
+    .nav-img-logo2{
+        background-image: url('../img/logo2.png');
     }
 
     .navbar-item-nav:last-child{
@@ -103,10 +115,6 @@
             margin: auto;
             border-radius: 10px; 
             transition: width 0.5s;
-        }
-
-        .nav-underline-active{
-            width: 2px;
         }
 
         .nav-underline-hover{
@@ -235,11 +243,6 @@
     background-color: #ffffff;
     margin: 5px;
     transition: 1s;
-}
-
-.technology-item:hover{
-    transition: 1s;
-    transform: perspective(300px) rotateY(40deg);
 }
 
 .technology-img{

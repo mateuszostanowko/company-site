@@ -54,11 +54,12 @@ $(document).scroll(function(){
     if(scrollValue>scrollSection) {
         $('.navbar').addClass('navbar-scroll');
         $('.scroll-top').addClass('d-block');
-        document.getElementsByClassName('navbar-logo-img').innerHtml='<img src="img/logo2.png" alt="MateuszOstanówko.pl" class="img img-fluid nav-img">';
+        $('.nav-img').addClass('nav-img-logo2');
     }
     else {
         $('.navbar').removeClass('navbar-scroll');
         $('.scroll-top').removeClass('d-block');
+        $('.nav-img').removeClass('nav-img-logo2');
     }
 });
 
