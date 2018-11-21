@@ -31,6 +31,7 @@
     right:0;
     left:0;
     background-color: #1395ff;
+    
 }
 
 
@@ -40,7 +41,8 @@
     width: 130px;
     background-image: url('../img/logo2.png');
     background-size: 100%;
-    border-radius: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 
@@ -64,7 +66,9 @@
     border-bottom: 2px solid #1395ff;
 }
 
-
+.navbar-toggler{
+    border-radius: 0rem;
+}
 
 @media(min-width: 768px){
     .navbar-item{
@@ -105,7 +109,7 @@
       .navbar-scroll{
         position: fixed;
         background-color: #1395ff;
-        transition: 0.6s;
+        transition: .6s;
     }
 
         .nav-underline{
@@ -113,7 +117,7 @@
             height: 2px;
             background-color: #ffffff; 
             margin: auto;
-            border-radius: 10px; 
+            border-radius: 10px;
             transition: width 0.5s;
         }
 
@@ -195,7 +199,7 @@
         right:50px;
         width: 70px;
         height: 70px;
-        border-radius: 35px;
+       
     }
 
     .scroll-top-icon{
@@ -269,5 +273,17 @@
     background-color: #1395ffbd;
 }
 
+.contact-item{
+    width: 100%;
+    font-size: 20px;
+    border: 2px dotted #fff;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.contact-item-label{
+    color: #ccc;
+}
 
 /* Copyright */
