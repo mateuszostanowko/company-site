@@ -121,3 +121,14 @@ $(document).ready(function(){
           $('.navbar').attr('data-target','#navbarList');
     }
   });
+
+  $(document).ready(function(){
+    if (window.innerWidth>=768){
+        $('.navbar').removeAttr('data-toggle');
+        $('.navbar').removeAttr('data-target');
+    }
+    else if(window.innerWidth<768){
+        $('.navbar').attr('data-toggle','collapse');
+        $('.navbar').attr('data-target','#navbarList');
+  }
+});
