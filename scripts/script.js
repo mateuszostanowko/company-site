@@ -108,3 +108,11 @@ $(document).ready(function(){
       } // End if
     });
   });
+
+  //delete navbar-toggler if window width > 768px
+
+  $(document).ready(function(){
+      if (window.innerWidth>=768){
+          $('.navbar').removeAttr('data-toggle');
+      }
+  });
