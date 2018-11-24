@@ -109,10 +109,15 @@ $(document).ready(function(){
     });
   });
 
-  //delete navbar-toggler if window width > 768px
+  //delete bootstrap atributes if window width >= 768px
 
-  $(document).ready(function(){
+  $(window).resize(function(){
       if (window.innerWidth>=768){
           $('.navbar').removeAttr('data-toggle');
+          $('.navbar').removeAttr('data-target');
       }
+      else if(window.innerWidth<768){
+          $('.navbar').attr('data-toggle','collapse');
+          $('.navbar').attr('data-target','#navbarList');
+    }
   });
