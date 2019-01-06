@@ -212,6 +212,9 @@
 
 
 /* O nas */
+.aboutTitle{
+    visibility: hidden;
+}
 .about-us-col{
     border: 2px solid #cccccc;
     border-radius: 5px;
@@ -233,8 +236,9 @@
     }
 }
 .about-projects-title{
+    visibility: visible;
     position: relative;
-    animation: aboutAnimation 1.5s;
+    animation: aboutAnimation 1.3s;
 }
 
 /* Technologie */
