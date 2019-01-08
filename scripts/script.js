@@ -108,8 +108,14 @@ $(document).ready(function(){
 
     //about projects animation
 $(document).scroll(function(){
-    if ($(document).scrollTop()>=300){
-        $('.aboutTitle').addClass('about-projects-title');
+    if ($(document).scrollTop()>=250){
+        $('.about-title').addClass('about-projects-title');
+        $('.about-text').addClass('about-projects-text');
+        $('.about-bottom-text').addClass('about-projects-bottom-text');
     }
-    else    $('.aboutTitle').removeClass('about-projects-title');
+    else{
+        $('.about-title').removeClass('about-projects-title');
+        $('.about-text').removeClass('about-projects-text');
+        $('.about-bottom-text').removeClass('about-projects-bottom-text');
+    }
 });

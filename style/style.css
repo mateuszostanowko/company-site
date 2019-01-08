@@ -212,7 +212,7 @@
 
 
 /* O nas */
-.aboutTitle{
+.about-title{
     visibility: hidden;
 }
 .about-us-col{
@@ -226,19 +226,64 @@
     margin-top: 20px;
 }
 
-@keyframes aboutAnimation{
+@keyframes aboutTitleAnimation{
     0%{
-        left: -1000px;
+        left: -2000px;
     }
 
     100%{
         left: 0;
     }
 }
+
 .about-projects-title{
     visibility: visible;
     position: relative;
-    animation: aboutAnimation 1.3s;
+    animation: aboutTitleAnimation 1.3s;
+}
+
+@keyframes aboutTextAnimation{
+    0%{
+        right: -2000px;
+    }
+
+    100%{
+        right: 0;
+    }
+}
+
+.about-text{
+    visibility: hidden;
+}
+
+.about-projects-text{
+    visibility: visible;
+    position: relative;
+    animation: aboutTextAnimation 1.5s;
+}
+
+@keyframes aboutBottomTextAnimation{
+    0%{
+        bottom: -80px;
+    }
+
+    100%{
+        bottom:0;
+    }
+}
+
+.about-bottom-text{
+    color: #fff;
+    
+}
+
+.about-projects-bottom-text{
+    transition-duration: 1s;
+    transition-delay: 1s;
+    color: gray;
+    position: relative;
+    animation: aboutBottomTextAnimation 1s; 
+    animation-delay: 1s;
 }
 
 /* Technologie */
