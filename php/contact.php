@@ -13,7 +13,9 @@
 
 
 <?php
-//filtruje dane użytkownika
+
+@echo('Test');
+/*//filtruje dane użytkownika
 $name = htmlspecialchars(trim($_POST['name']));
 $surname = htmlspecialchars(trim($_POST['surname']));
 $email = htmlspecialchars(trim($_POST['email']));
@@ -60,5 +62,5 @@ $statement
         }
     }
 
-    document.getElementById("statement").innerHTML = $statement;
+    document.getElementById("statement").innerHTML = $statement;*/
 ?>
