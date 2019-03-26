@@ -67,7 +67,11 @@
     <section id="about-sites" class="padding-scroll container-fluid">
       <div class="container mx-auto height-100pro">
         <div class="text-secondary">
-          <p class="display-3 about-title">O projektach</p>
+          <div class="about-projects-container">
+            <p class="display-3 about-title">O projektach</p>
+            <div class="about-projects-mask"></div>
+          </div>
+          
           <h5 class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ratione debitis veniam ut, veritatis quaerat nulla pariatur labore repellendus animi nemo, dolore exercitationem incidunt aliquam perferendis alias quo? Ullam recusandae, alias temporibus voluptate beatae vel accusantium, impedit est ipsam fugiat ipsum. Quidem distinctio libero itaque natus ea beatae ipsum ad.</h5>
           <p class="about-bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
